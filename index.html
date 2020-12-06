@@ -1,98 +1,48 @@
 <!DOCTYPE html>
-<!-- Created By IWebDev -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="icon" href="./images/pfp.jpg">
-  </head>
-  <body>
-    <div class="center">
-      <form name="forms">
-        <input type="text" id="display" name="display" disabled>
-        <div class="buttons">
-          <input type="button" id="seven" value="7">
-          <input type="button" id="eight" value="8">
-          <input type="button" id="nine" value="9">
-          <input type="button" id="divide" value="/"><br>
-          <input type="button" id="four" value="4">
-          <input type="button" id="five" value="5">
-          <input type="button" id="six" value="6">
-          <input type="button" id="multi" value="*"><br>
-          <input type="button" id="one" value="1">
-          <input type="button" id="two" value="2">
-          <input type="button" id="three" value="3">
-          <input type="button" id="subs" value="-"><br>
-          <input type="button" id="dot" value=".">
-          <input type="button" id="zero" value="0">
-          <input type="button" id="add" value="+">
-          <input type="button" id="clear" value="C"><br>
-          <input type="button" id="equal" value="=">
-        </div>
-</form>
-</div>
-<script>
-$(document).ready(function(){
-  $('#one').click(function(){
-    document.forms.display.value += 1;
-  });
-  $('#two').click(function(){
-    document.forms.display.value += 2;
-  });
-  $('#three').click(function(){
-    document.forms.display.value += 3;
-  });
-  $('#four').click(function(){
-    document.forms.display.value += 4;
-  });
-  $('#five').click(function(){
-    document.forms.display.value += 5;
-  });
-  $('#six').click(function(){
-    document.forms.display.value += 6;
-  });
-  $('#seven').click(function(){
-    document.forms.display.value += 7;
-  });
-  $('#eight').click(function(){
-    document.forms.display.value += 8;
-  });
-  $('#nine').click(function(){
-    document.forms.display.value += 9;
-  });
-  $('#zero').click(function(){
-    document.forms.display.value += 0;
-  });
-  $('#add').click(function(){
-    document.forms.display.value += '+';
-  });
-  $('#subs').click(function(){
-    document.forms.display.value += '-';
-  });
-  $('#multi').click(function(){
-    document.forms.display.value += '*';
-  });
-  $('#divide').click(function(){
-    document.forms.display.value += '/';
-  });
-  $('#dot').click(function(){
-    document.forms.display.value += '.';
-  });
-  $('#equal').click(function(){
-    if (display.value == "") {
-      alert("Please enter any numbers to calculate!");
-    }else{
-      document.forms.display.value =
-      eval(document.forms.display.value);
-    }
-  });
-  $('#clear').click(function(){
-    document.forms.display.value = "";
-  });
-})
-</script>
+<html lang="en">
 
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Neumorphism calculator design</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <div class="result">
+      <p id="result-box">0</p>
+    </div>
+
+
+    <div class="buttons">
+      <div class="button action-btn" id="clear"> AC </div>
+      <div class="button action-btn"> MC</div>
+      <div class="button num-button  action-btn"> %</div>
+      <div class="button num-button  calc-action-btn"> /</div>
+      <div class="button num-button seven">7</div>
+      <div class="button num-button eight">8</div>
+      <div class="button num-button  nine">9</div>
+      <div class="button num-button  calc-action-btn">*</div>
+      <div class="button num-button  four">4</div>
+      <div class="button num-button  five">5</div>
+      <div class="button num-button  six">6</div>
+      <div class="button num-button  calc-action-btn">-</div>
+      <div class="button num-button  one">1</div>
+      <div class="button num-button  two">2</div>
+      <div class="button num-button  three">3</div>
+      <div class="button num-button  calc-action-btn">+</div>
+      <div class="button num-button  zero">0</div>
+      <div class="button num-button  point">.</div>
+      <div class="button calc-action-btn" id="total">=</div>
+    </div>
+
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
 </html>
