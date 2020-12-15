@@ -49,10 +49,10 @@ clearBtn.addEventListener('click', ()=> {
 allBtnSpread.forEach((button, i)=> {
     button.addEventListener('click', ()=> {
        let element = allBtns[i];
-       element.style.boxShadow ='inset -6px -6px 16px 0 rgba(255, 255, 255, .5), inset 6px 6px 16px 0 rgba(209, 205, 199, .5)';
+       element.style.boxShadow ='inset -6px -6px 16px 0 rgba(32, 32, 32, .5), inset 6px 6px 16px 0 rgba(39, 39, 39, .5)';
 
        setTimeout(function(){
-        element.style.boxShadow = " 6px 6px 16px 0 rgba(209, 205, 199, .5),-6px -6px 16px 0 rgba(255, 255, 255, .5)"
+        element.style.boxShadow = " 6px 6px 16px 0 rgba(32, 32, 32, .5),-6px -6px 16px 0 rgba(39, 39, 39, .5)"
        }, 0300);
 
     })
